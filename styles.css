@@ -1,0 +1,112 @@
+/* Sets font styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #1D1B1C;
+}
+
+/* Sets up header box for phone view */
+
+h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: lighter;
+    height: 400px;
+    background-color: #33A8DD;
+    color: #F2F3EE;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    overflow-wrap: normal;
+}
+
+/* Changes orientation of title boxes for phone view */
+
+section {
+    background-color: #F7F5F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Makes smaller margin around "Title" elements */
+h2 {
+    margin: 4px;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+
+/* Resets the dafault margins for paragraphs */
+
+p {
+    margin: 4px;
+}
+
+/* Sizes for the three boxes */
+
+.box {
+    height: 260px;
+    width: 160px;
+}
+
+/* Sets up article boxes and adds margin for phone view */
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 32px;
+}
+
+/* Colors for the three box decorations */
+#blue {
+    height: 32px;
+    background-color: #33A8DD;
+    width: 172px;
+}
+
+#red {
+    height: 32px;
+    background-color: #F46731;
+    width: 172px;
+}
+
+#green {
+    height: 32px;
+    background-color: #2BCDC0;
+    width: 172px;
+}
+
+/* Media query rules for laptops and desktops */
+
+@media (min-width: 576px) {
+    body {
+        color: #DDEFF1;
+        text-align: center;
+    }
+
+/* Changes background color of header */
+
+    h1 {
+        background-color: #2BCDC0;
+    }
+
+/* Reformats lower half for desktop */
+
+    section {
+        height: 400px;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+/* Removes excessive margin dfor desktop view */
+    article {
+        margin: 0px
+    }
+}
